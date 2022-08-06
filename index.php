@@ -3,21 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="app/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="app/css/estilo.css">
         <link rel="stylesheet" type="text/css" href="app/bootstrap/css/bootstrap.min.css">
         
-        <title>Buscar CEP</title>
+        <title>Consulta CEP</title>
     </head>
-    <body>
+    <body class="body">
+
         <div>
-            <h1>Buscar Cep</h1>
+            <img class="logo" src="app/img/logo.png" alt="logo">
         </div>
-        <form action="exibirDadosCep.php" method="POST">
-            <div class="mb-3">
-                <input type="text" name="cep" class="form-control" id="cep" placeholder="Digite o cep" required>
-            </div>
-            <div>
-                <button class="btn btn-primary" id="botao" type="submit">Buscar</button>
-            </div>
-        </form>
+
+        <div class="container-md">
+            <form action="exibirDadosCep.php" method="POST">
+                <fieldset class="camposForm">
+                    <div class="campoCep">
+                        <input type="text" name="cep" class="form-control shadow-sm p-2" id="cep" placeholder="Digite o cep" maxlength="9" required>
+                    </div>
+                    <div class="botaoConsulta">
+                        <button id="botao" class="btn btn-dark shadow-sm" type="submit">Consultar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>

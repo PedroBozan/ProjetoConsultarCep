@@ -1,0 +1,43 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.body {
+    background-color: whitesmoke;
+    font-family: 'Oxygen', sans-serif;
+}
+
+header, section, footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 30px 0;
+    max-width: 750px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 100px;
+}
+
+header h1 span {
+    color: #bf0a0a;
+}
+
+section .campoCep {
+    width: 400px;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    color: rgba(0, 0, 0, 0.8);
+}

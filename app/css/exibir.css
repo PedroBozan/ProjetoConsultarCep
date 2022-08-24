@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 .body {
@@ -30,16 +31,32 @@ section label {
     text-align: left;
 }
 
-section .campo {
+section fieldset .campos {
     margin: 10px auto;
     width: 350px;
+}
 
+section fieldset .conteudo {
+    display: flex;
+}
+
+section .copiar {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 309px;
+    opacity: 0.3;
+}
+
+section .copiar:hover {
+    opacity: 0.7;
 }
 
 footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    position: fixed;
+    height: 40px;
+    position: absolute;
     color: rgba(0, 0, 0, 0.8);
 }

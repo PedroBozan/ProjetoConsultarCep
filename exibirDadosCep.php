@@ -23,6 +23,7 @@ $dadosCep->consultarCep($_POST['cep']);
         <link rel="stylesheet" type="text/css" href="app/bootstrap/css/bootstrap.min.css">
 
         <script type="text/javascript" src="app/js/script.js"></script>
+        <script src="app/bootstrap/js/bootstrap.bundle.min.js"></script>
         
         <title>Consulta CEP</title>
     </head>
@@ -34,40 +35,90 @@ $dadosCep->consultarCep($_POST['cep']);
         </header>
         
         <section>
-
-            <div class="campo">
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep "name="cep" class="form-control shadow-sm p-2" value="<?=$dadosCep->numCep?>" readonly>
-            </div>
+            <fieldset>
+                <div class="campos">
+                    <label for="cep">CEP:</label>
+                        <div class="conteudo">
+                            <input type="text" id="cep" name="cep" class="form-control shadow-sm p-2" value="<?=$dadosCep->numCep?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('cep')">
+                        <div>
+                </div>
+            </fieldset>
                 
-            <div class="campo">
-                <label for="logradouro">Logradouro:</label>
-                <input type="text" id="logradouro" name="logradouro" class="form-control shadow-sm p-2" value="<?=$dadosCep->descLogradouro?>" readonly>
-            </div>
+            <fieldset>
+                <div class="campos">
+                    <label for="logradouro">Logradouro:</label>
+                        <div class="conteudo">
+                            <input type="text" id="logradouro" name="logradouro" class="form-control shadow-sm p-2" value="<?=$dadosCep->descLogradouro?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('logradouro')">
+                        </div>
+                </div>
+            </fieldset>
 
-            <div class="campo">
-                <label for="complemento">Complemento:</label>
-                <input type="text" id="complemento" name="complemento" class="form-control shadow-sm p-2" value="<?=$dadosCep->descComplemento?>" readonly>
-            </div>
+            <fieldset>
+                <div class="campos">
+                    <label for="complemento">Complemento:</label>
+                        <div class="conteudo">
+                            <input type="text" id="complemento" name="complemento" class="form-control shadow-sm p-2" value="<?=$dadosCep->descComplemento?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('complemento')">
+                        </div>
+                </div>
+            </fieldset>
 
-            <div class="campo">
-                <label for="bairro">Bairro:</label>
-                <input type="text" id="bairro" name="bairro" class="form-control shadow-sm p-2" value="<?=$dadosCep->descBairro?>" readonly>
-            </div>
+            <fieldset>
+                <div class="campos">
+                    <label for="bairro">Bairro:</label>
+                        <div class="conteudo">
+                            <input type="text" id="bairro" name="bairro" class="form-control shadow-sm p-2" value="<?=$dadosCep->descBairro?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('bairro')">
+                        </div>
+                </div>
+            </fieldset>
 
-            <div class="campo">
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" class="form-control shadow-sm p-2" value="<?=$dadosCep->descCidade?>" readonly>
-            </div>
+            <fieldset>
+                <div class="campos">
+                    <label for="cidade">Cidade:</label>
+                        <div class="conteudo">
+                            <input type="text" id="cidade" name="cidade" class="form-control shadow-sm p-2" value="<?=$dadosCep->descCidade?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('cidade')">
+                        </div>
+                </div>
+            </fieldset>
             
-            <div class="campo">
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" class="form-control shadow-sm p-2" value="<?=$dadosCep->descEstado?>" readonly>
-            </div>
+            <fieldset>
+                <div class="campos">
+                    <label for="estado">Estado:</label>
+                        <div class="conteudo">
+                            <input type="text" id="estado" name="estado" class="form-control shadow-sm p-2" value="<?=$dadosCep->descEstado?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('estado')">
+                        </div>
+                </div>
+            </fieldset>
 
-            <div class="campo">
-                <label for="ibge">Código IBGE:</label>
-                <input type="text" id="ibge" name="ibge" class="form-control shadow-sm p-2" value="<?=$dadosCep->codIbge?>" readonly>
+            <fieldset>
+                <div class="campos">
+                    <label for="ibge">Código IBGE:</label>
+                        <div class="conteudo">
+                            <input type="text" id="ibge" name="ibge" class="form-control shadow-sm p-2" value="<?=$dadosCep->codIbge?>" readonly>
+                            <img src="app/img/copiar.png" class="copiar" title="Copiar conteúdo" onclick="copiarTexto('ibge')">
+                        </div>
+                </div>
+            </fieldset>
+
+            <div class="modal fade" id="modalMensagem" tabindex="-1" aria-labelledby="elementoModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                        </div>
+                        <div class="modal-body">
+                            Conteúdo copiado!
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-dark shadow-sm" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>

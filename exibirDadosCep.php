@@ -105,6 +105,12 @@ $dadosCep->consultarCep($_POST['cep']);
                 </div>
             </fieldset>
 
+            <fieldset>
+                <div class="campos" id="botao-redirecionar">
+                    <button class="btn btn-dark shadow-sm" id="botaoNovaConsulta" onclick="redirecionar()">Nova Consulta</button>
+                </div>
+            </fieldset>
+
             <div class="modal fade" id="modalMensagem" tabindex="-1" aria-labelledby="elementoModal" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">

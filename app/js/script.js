@@ -18,3 +18,8 @@ function mostrarModal() {
 
       modal.show();
 }
+
+function redirecionar() {
+
+    window.location.href = "index.php";
+}

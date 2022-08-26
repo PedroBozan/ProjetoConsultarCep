@@ -3,7 +3,7 @@
     margin: 0%;
 }
 
-.body {
+.corpo-pagina {
     background-color: whitesmoke;
     font-family: 'Oxygen', sans-serif;
 }
@@ -28,7 +28,7 @@ header h1 span {
     color: #bf0a0a;
 }
 
-section .campoCep {
+section .campo-cep {
     width: 400px;
     padding: 2%;
     margin: 0 auto;

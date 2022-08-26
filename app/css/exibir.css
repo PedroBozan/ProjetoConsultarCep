@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.body {
+.corpo-pagina {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,7 +33,7 @@ section {
     margin-top: auto;
 }
 
-section fieldset .campos {
+section fieldset .campo-conjunto {
     margin: 10px auto;
     width: 350px;
 }
@@ -44,11 +44,11 @@ section label {
     text-align: left;
 }
 
-section fieldset .conteudo {
+section fieldset .campo-conteudo {
     display: flex;
 }
 
-section .copiar {
+section .botao-copiar {
     position: absolute;
     cursor: pointer;
     margin-top: 4px;
@@ -56,11 +56,11 @@ section .copiar {
     opacity: 0.3;
 }
 
-section .copiar:hover {
+section .botao-copiar:hover {
     opacity: 0.7;
 }
 
-section fieldset #botao-redirecionar {
+section fieldset #redireciona {
     margin-top: 20px;
 }
 

@@ -26,14 +26,14 @@ $dadosCep->consultarCep($_POST['cep']);
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 
         <!-- Link para a imagem .ico da página -->
-        <link rel="icon" type="image/x-icon" href="app/img/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="app/assets/favicon.ico">
 
         <!-- Link dos arquivos CSS. -->
         <link rel="stylesheet" type="text/css" href="app/css/exibir.css">
         <link rel="stylesheet" type="text/css" href="app/bootstrap/css/bootstrap.min.css">
 
         <!-- Link dos arquivos de script. -->
-        <script type="text/javascript" src="app/js/script.js"></script>
+        <script type="text/javascript" src="app/script/script.js"></script>
         <script src="app/bootstrap/js/bootstrap.bundle.min.js"></script>
         
         <title>Consulta CEP</title>
@@ -53,7 +53,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="cep">CEP:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="cep" name="cep" class="form-control shadow-sm p-2" value="<?=$dadosCep->numCep?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('cep','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('cep','mensagem')">
                         <div>
                 </div>
             </fieldset>
@@ -63,7 +63,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="logradouro">Logradouro:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="logradouro" name="logradouro" class="form-control shadow-sm p-2" value="<?=$dadosCep->descLogradouro?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('logradouro','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('logradouro','mensagem')">
                         </div>
                 </div>
             </fieldset>
@@ -73,7 +73,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="complemento">Complemento:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="complemento" name="complemento" class="form-control shadow-sm p-2" value="<?=$dadosCep->descComplemento?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('complemento','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('complemento','mensagem')">
                         </div>
                 </div>
             </fieldset>
@@ -83,7 +83,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="bairro">Bairro:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="bairro" name="bairro" class="form-control shadow-sm p-2" value="<?=$dadosCep->descBairro?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('bairro','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('bairro','mensagem')">
                         </div>
                 </div>
             </fieldset>
@@ -93,7 +93,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="cidade">Cidade:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="cidade" name="cidade" class="form-control shadow-sm p-2" value="<?=$dadosCep->descCidade?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('cidade','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('cidade','mensagem')">
                         </div>
                 </div>
             </fieldset>
@@ -103,7 +103,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="estado">Estado:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="estado" name="estado" class="form-control shadow-sm p-2" value="<?=$dadosCep->descEstado?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('estado','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('estado','mensagem')">
                         </div>
                 </div>
             </fieldset>
@@ -113,7 +113,7 @@ $dadosCep->consultarCep($_POST['cep']);
                     <label for="ibge">Código IBGE:</label>
                         <div class="campo-conteudo">
                             <input type="text" id="ibge" name="ibge" class="form-control shadow-sm p-2" value="<?=$dadosCep->codIbge?>" readonly>
-                            <img src="app/img/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('ibge','mensagem')">
+                            <img src="app/assets/copiar.png" class="botao-copiar" title="Copiar conteúdo" onclick="copiarTexto('ibge','mensagem')">
                         </div>
                 </div>
             </fieldset>

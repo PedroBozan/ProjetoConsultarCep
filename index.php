@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 
         <!-- Link para a imagem .ico da página -->
-        <link rel="icon" type="image/x-icon" href="app/img/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="app/assets/favicon.ico">
 
         <!-- Link dos arquivos CSS. -->
         <link rel="stylesheet" type="text/css" href="app/css/index.css">
